@@ -23,4 +23,9 @@ public class Deadlock : MonoBehaviour
         await Task.Delay(1);
         return result;
     }
+
+    private async Task Tett()
+    {
+        await Task.CompletedTask;
+    }
 }
